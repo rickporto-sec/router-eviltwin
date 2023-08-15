@@ -24,7 +24,7 @@ wpa_passphrase=$wpa_passphrase
 # bridge=br0
 EOT
 
-# Configuration file, DHCP and DNS
+# Configuration file, dnsmasq DHCP and DNS
 cat <<EOT > /etc/dnsmasq.conf
 interface=$interface
 dhcp-range=$ipv4.2,$ipv4.30,255.255.255.0,12h
